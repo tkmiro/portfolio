@@ -1,0 +1,212 @@
+$main-bg-color: #873C9C;
+$main-color: #FED148;
+$main-font: 'Poppins', sans-serif;
+
+
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    border:0;
+    font-family: $main-font;
+}
+
+.menu {
+    width:100%;
+    background-color: $main-bg-color;
+    color:$main-color;
+    display: none;
+}
+
+.mob-menu-icon {
+    position:absolute;
+    top:0;
+    right:5px;
+}
+
+.logo {
+    background-color: $main-bg-color;
+    color:$main-color;
+    padding-left:5px;
+    font-size: 23px;
+}
+
+.main-area {
+    text-align: center;
+    padding: 100px 30px;
+
+    & h1 {
+        font-size: 30px;
+    }
+
+    & h3 {
+        font-size: 18px;
+    }
+}
+
+.secondary-area {
+    position: relative;
+
+    & img {
+        display:block;
+        width:80%;
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom:-100px;
+    }
+}
+
+.see-more-stripe {
+    width: 100%;
+    background-color: $main-bg-color;
+    color:$main-color;
+}
+
+.test {
+    position:relative;
+}
+
+.custom-shape-divider-top-1638275482 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1638275482 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 118px;
+}
+
+.custom-shape-divider-top-1638275482 .shape-fill {
+    fill: #873C9C;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1638275482 svg {
+        width: calc(147% + 1.3px);
+        height: 93px;
+    }
+}
+
+/** ABOUT ME SECTION **/
+
+#about-me {
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px 30px;
+
+    & div {
+        width:100%;
+        text-align: left;
+        line-height: 1.5em;
+
+        & h3 {
+            margin-bottom:10px;
+        }
+
+        & img {
+            width:100%;
+        }
+        
+    }
+}
+
+/** COLLABORATION SECTION **/
+
+#collaboration {
+    padding:30px 30px;
+    text-align: center;
+
+    & h3 {
+        margin-bottom: 15px;
+    }
+
+    & p {
+        margin-bottom: 30px;
+    }
+
+    & button {
+        color:$main-color;
+        background-color: $main-bg-color;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+}
+
+/** SKILLS SECTION **/
+
+#skills {
+    margin-top:50px;
+}
+
+.skills-container {
+    background-color: $main-bg-color;
+    width:100%;
+    padding:45px 30px;
+
+    & div {
+        background-color: #FFFFFF;
+        height:100%;
+        width:100%;
+        margin:auto;
+        padding:15px;
+        border-radius: 15px;
+        text-align: center;
+
+        & h3 {
+            margin-bottom:15px;
+            font-size:22px;
+        }
+
+        & h4 {
+            margin-bottom:10px;
+            font-size:17px;
+        }
+
+        & ul {
+            list-style: none;
+        }
+
+        & ul:first-of-type {
+            margin-bottom:15px;
+        }
+    }
+}
+
+/** PROJECTS SECTION **/
+
+#projects {
+    padding:30px 30px;
+    text-align: center;
+
+    & h3 {
+        margin-bottom:30px;
+        font-size:20px;
+    }
+
+    & div {
+        background-color:$main-bg-color;
+        width:80%;
+        height:130px;
+        margin: auto;
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+}
+
+/** FOOTER SECTION **/
+
+footer {
+    background-color: $main-bg-color;
+    width:100%;
+    height:100px;
+
+    & a:link {
+        text-decoration: none;
+        color:$main-color;
+    }
+}
