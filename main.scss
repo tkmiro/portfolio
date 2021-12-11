@@ -1,6 +1,10 @@
 $main-bg-color: #873C9C;
 $main-color: #F5CB67;
 $main-font: 'Poppins', sans-serif;
+$h1-font-size-m:30px;
+$h2-font-size-m:25px;
+$h3-font-size-m:20px;
+$h4-font-size-m:18px;
 
 @mixin desktop {
     @media (min-width: 992px) { 
@@ -61,11 +65,11 @@ $main-font: 'Poppins', sans-serif;
     padding: 100px 30px;
 
     & h1 {
-        font-size: 30px;
+        font-size: $h1-font-size-m;
     }
 
-    & h3 {
-        font-size: 18px;
+    & h4 {
+        font-size: $h4-font-size-m;
     }
 }
 
@@ -188,12 +192,12 @@ $main-font: 'Poppins', sans-serif;
 
         & h3 {
             margin-bottom:15px;
-            font-size:22px;
+            font-size: $h3-font-size-m;
         }
 
         & h4 {
             margin-bottom:10px;
-            font-size:17px;
+            font-size: $h4-font-size-m;
         }
 
         & ul {
@@ -214,7 +218,7 @@ $main-font: 'Poppins', sans-serif;
 
     & h3 {
         margin-bottom:30px;
-        font-size:20px;
+        font-size: $h3-font-size-m;
     }
 
     & div {
@@ -256,6 +260,10 @@ footer {
     .mob-menu-icon {
         display:none;
     }
+
+    .skills-container {
+        padding: 45px 130px;
+    }
     
     .skills-lists {
         display:flex;
@@ -267,6 +275,9 @@ footer {
     }
 
     #about-me {
+        padding-left:130px;
+        padding-right:130px;
+
         & div {
             width:50%;
         }
@@ -274,5 +285,9 @@ footer {
         & .about-me-img {
             order:1;
         }
+    }
+
+    #collaboration {
+        padding: 80px 30px;
     }
 }
