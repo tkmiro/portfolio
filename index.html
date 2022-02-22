@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -12,128 +13,204 @@
     <title>Miroslav Tkacik</title>
   </head>
   <body>
-    <section id="landing">
+    <!-- LANDING PAGE -->
+    <div class="wrapper">
       <div class="navigation">
         <div class="logo">
-          <img src="logo1.png" alt="" />
+          <img src="logo-blue.svg" alt="" />
         </div>
         <div class="menu">
           <ul>
             <li>Home</li>
             <li>About me</li>
             <li>Projects</li>
-            <li>Contact me</li>
+            <li class="contact-me-open">Contact me</li>
+          </ul>
+          <div class="mob-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="mob-menu">
+          <ul>
+            <li>Home</li>
+            <li>About me</li>
+            <li>Projects</li>
+            <li class="contact-me-open">Contact me</li>
           </ul>
         </div>
-        <div class="mob-menu-icon">
-          <img src="icons8-menu.svg" alt="" />
-        </div>
       </div>
-      <div class="main-area">
-        <h1>Hi, I'm Miro.</h1>
-        <h4>
-          I build and design beautifully simple websites and web applications.
-        </h4>
-      </div>
-      <div class="secondary-area">
-        <img src="laptop1.png" alt="" />
-        <div class="test">
-          <div class="see-more-stripe">
-            <span>See more</span>
+      <div class="content-wrapper">
+        <section id="landing">
+          <div class="main-area">
+            <div>
+              <h1>Hello, I'm Miro.</h1>
+              <h4>I build stuff for web.</h4>
+              <p>
+                I build and design beautifully simple websites and web
+                applications.
+              </p>
+            </div>
+            <div>
+              <img src="programmer-blue.svg" alt="" />
+            </div>
           </div>
-          <div class="custom-shape-divider-top-1638275482">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                class="shape-fill"
-              ></path>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-    <main>
-      <section id="about-me">
-        <div class="about-me-img">
-          <img src="logo1.png" alt="" />
-        </div>
-        <div class="about-me-content">
-          <h3>Me, myself and I</h3>
-          <p>
-            Hello! My name is Miroslav and I enjoy creating (and occasionally
-            designing) beautiful websites and webapps. I enjoy web development
-            as a hobby that's why I've been improving my skills and knowledge in
-            my free time by taking new courses and also working on few personal
-            projects.
-          </p>
-          <p>
-            My interest in web development began in 2017 when I first decided to
-            try to learn HTML and CSS.Source of my knowledge are mainly courses
-            from Udemy. Since 2019 I have been working in a full time job as a
-            Reporting Specialist, the position where I got to use my HTML, CSS
-            and JavaScript knowledge while also learning new technologies in the
-            field of data reports.
-          </p>
-        </div>
-      </section>
-      <section id="collaboration">
-        <h3>Interested in collaborating?</h3>
-        <p>I'm always open to discussing product design or development work</p>
-        <button>Start a conversation</button>
-      </section>
-      <section id="skills">
-        <div class="skills-container">
-          <div>
-            <h3>Languages I speak</h3>
-
-            <div class="skills-lists">
-              <div>
-                <h4>Frontend web developer</h4>
-                <ul class="dev-list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Bootstrap</li>
-                  <li>SCSS</li>
-                  <li>JavaScript</li>
-                  <li>jQuery</li>
-                  <li>Angular</li>
-                  <li>TypeScript</li>
-                </ul>
+          <div class="secondary-area">
+            <div class="blob-divider-container">
+              <div class="see-more-stripe">
+                <span>Scroll down to see more</span>
+                <img src="double-arrow-down-white.svg" alt="" />
               </div>
-
-              <div>
-                <h4>Web Designer</h4>
-                <ul class="design-list">
-                  <li>Affinity Designer</li>
-                </ul>
+              <div class="custom-shape-divider-top-1638275482">
+                <svg
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1200 120"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"
+                  ></path>
+                </svg>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="projects">
-        <h3>My previous work</h3>
-        <div class="project project_1"></div>
-        <div class="project project_1"></div>
-        <div class="project project_1"></div>
-      </section>
-    </main>
-    <footer>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Projects</a></li>
-      </ul>
-      <ul>
-        <li>
-          <a href=""><img src="" alt="github" /></a>
-        </li>
-      </ul>
-    </footer>
+        </section>
+        <main>
+          <!-- ABOUT ME -->
+          <section id="about-me" data-aos="fade-up">
+            <div class="about-me-img">
+              <img src="photo-blue.svg" alt="" />
+            </div>
+            <div class="about-me-content">
+              <h3>Me, myself and I</h3>
+              <p>
+                Hello! My name is Miroslav and I enjoy creating (and
+                occasionally designing) beautiful websites and webapps. I enjoy
+                web development as a hobby that's why I've been improving my
+                skills and knowledge in my free time by taking new courses and
+                also working on few personal projects.
+              </p>
+              <p>
+                My interest in web development began in 2017 when I first
+                decided to try to learn HTML and CSS. Source of my knowledge are
+                mainly courses from Udemy. Since 2019 I have been working in a
+                full time job as a Reporting Specialist, the position where I
+                got to use my HTML, CSS and JavaScript knowledge while also
+                learning new technologies in the field of data reports.
+              </p>
+            </div>
+          </section>
+          <!-- COLLABORATION -->
+          <section id="collaboration">
+            <h3>Interested in collaborating?</h3>
+            <p>
+              I'm always open to discussing product design or development work
+            </p>
+            <button class="contact-me-open">Start a conversation</button>
+            <div class="black-overlay">
+              <div class="contact-over">
+                <form action="">
+                  <label for="email">Email adress:</label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your email adress"
+                  />
+                  <label for="subject">Subject:</label>
+                  <input
+                    id="subject"
+                    type="text"
+                    placeholder="What is your message about?"
+                  />
+                  <label for="message">Your message:</label>
+                  <textarea name="" id="message" cols="30" rows="10"></textarea>
+                  <div>
+                    <button>SEND</button>
+                    <button class="cancel-button" type="button">CANCEL</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+          <!-- SKILLS -->
+          <section id="skills">
+            <div class="skills-container">
+              <div data-aos="fade-up">
+                <h3>Languages I speak</h3>
+
+                <div class="skills-lists">
+                  <div>
+                    <img src="coding-icon-orange.svg" alt="" />
+                    <h4>Frontend web developer</h4>
+                    <ul class="dev-list">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                      <li>SCSS</li>
+                      <li>JavaScript</li>
+                      <li>jQuery</li>
+                      <li>Angular</li>
+                      <li>TypeScript</li>
+                      <li>Git</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <img src="design-icon-orange.svg" alt="" />
+                    <h4>Web Designer</h4>
+                    <ul class="design-list">
+                      <li>Affinity Designer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <span style="color: white">
+                If you didn't find what you were looking for, no worries.
+                <br />
+                I'm always learning.</span
+              >
+            </div>
+          </section>
+          <!-- PROJECTS -->
+          <section id="projects" data-aos="fade-up">
+            <h3>My previous work</h3>
+            <div class="project project_1"></div>
+            <div class="project project_1"></div>
+            <div class="project project_1"></div>
+          </section>
+          <!-- CONTACT ME -->
+          <section id="contact-me">
+            <div>
+              <span
+                >Does collaboration sounds interesting? We should have a
+                chat!</span
+              >
+              <button class="contact-me-open">Let's talk!</button>
+            </div>
+          </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href=""><img src="github-icon.svg" alt="github" /></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
   </body>
 </html>
