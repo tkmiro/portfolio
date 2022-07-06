@@ -7,6 +7,9 @@ const mobMenuLi = document.querySelectorAll(".mob-menu ul li");
 const mobMenu = document.querySelector(".mob-menu");
 const contentWrapper = document.querySelector(".content-wrapper");
 const body = document.querySelector("body");
+const menuSpan1 = document.querySelector(".mob-menu-icon span:nth-of-type(1)");
+const menuSpan2 = document.querySelector(".mob-menu-icon span:nth-of-type(2)");
+const menuSpan3 = document.querySelector(".mob-menu-icon span:nth-of-type(3)");
 
 // MOBILE MENU
 openMenu.addEventListener("click", () => {
@@ -19,6 +22,10 @@ openMenu.addEventListener("click", () => {
       mobMenu.style.opacity = "1";
     }, 100);
     body.style.overflow = "hidden";
+    menuSpan1.style.opacity = "0";
+    menuSpan3.style.opacity = "0";
+    menuSpan2.style.width = "90%";
+    menuSpan2.style.transform = "rotate(45deg)";
     //CLOSE
   } else {
     mobMenu.style.opacity = "0";
@@ -29,6 +36,10 @@ openMenu.addEventListener("click", () => {
       mobMenu.style.display = "none";
     }, 200);
     body.style.overflow = "scroll";
+    menuSpan1.style.opacity = "1";
+    menuSpan3.style.opacity = "1";
+    menuSpan2.style.width = "100%";
+    menuSpan2.style.transform = "rotate(0deg)";
   }
 });
 

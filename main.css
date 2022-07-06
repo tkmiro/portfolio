@@ -67,6 +67,8 @@ button {
   width: 100%;
   background-color: #2b3f79;
   border-radius: 5px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 .navigation .mob-menu {
