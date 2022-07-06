@@ -30,7 +30,7 @@ button {
   position: sticky;
   width: 100%;
   top: 0;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 100;
 }
 
@@ -67,8 +67,8 @@ button {
   width: 100%;
   background-color: #2b3f79;
   border-radius: 5px;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .navigation .mob-menu {
@@ -273,7 +273,6 @@ button {
   margin: auto;
   background-color: #ffffff;
   opacity: 1;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 30px), repeating-linear-gradient(#2b3f7955, #2b3f79);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,6 +282,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 5px;
 }
 
 #collaboration .black-overlay .contact-over form {
@@ -311,14 +311,16 @@ button {
 #collaboration .black-overlay .contact-over form textarea {
   width: 100%;
   padding: 5px 10px;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-bottom: 15px;
   margin-top: 5px;
+  border: 1px solid grey;
 }
 
 #collaboration .black-overlay .contact-over form input:focus,
 #collaboration .black-overlay .contact-over form textarea:focus {
   outline: 1px solid #f55847;
+  border-color: transparent;
 }
 
 #collaboration .black-overlay .contact-over form div {
@@ -457,7 +459,7 @@ footer ul {
 
 footer a:link {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 
 footer a:link img {
