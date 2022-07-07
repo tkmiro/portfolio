@@ -11,7 +11,7 @@ const menuSpan1 = document.querySelector(".mob-menu-icon span:nth-of-type(1)");
 const menuSpan2 = document.querySelector(".mob-menu-icon span:nth-of-type(2)");
 const menuSpan3 = document.querySelector(".mob-menu-icon span:nth-of-type(3)");
 
-// MOBILE MENU
+// OPENING & CLOSING MOBILE MENU
 openMenu.addEventListener("click", () => {
   //OPEN
   if (mobMenu.style.display == "none") {
@@ -41,6 +41,13 @@ openMenu.addEventListener("click", () => {
     menuSpan2.style.width = "100%";
     menuSpan2.style.transform = "rotate(0deg)";
   }
+});
+
+// HIDING MOBILE MENU AFTER CLICKING LINK IN MENU
+mobMenuLi.forEach((li) => {
+  li.addEventListener("click", () => {
+    mobMenu.style.opacity = "0";
+  });
 });
 
 // HIDE CONTACT FORM
