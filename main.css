@@ -207,7 +207,6 @@ button {
 #collaboration .black-overlay .contact-over {
   width: 90%;
   max-width: 600px;
-  height: 90%;
   max-height: 600px;
   margin: auto;
   background-color: #ffffff;
@@ -217,6 +216,7 @@ button {
   justify-content: center;
   flex-direction: column;
   border-radius: 5px;
+  padding: 25px 0;
 }
 #collaboration .black-overlay .contact-over h2 {
   text-transform: uppercase;
