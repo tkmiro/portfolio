@@ -254,6 +254,7 @@ button {
 
     & .contact-over {
       width: 90%;
+      max-width:600px;
       height: 90%;
       max-height: 600px;
       margin: auto;
@@ -262,7 +263,12 @@ button {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       border-radius: 5px;
+
+      & h2 {
+        text-transform: uppercase;;
+      }
 
       & form {
         display: flex;
@@ -270,8 +276,7 @@ button {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        padding: 30px;
-
+        padding: 10px 30px;
         & label {
           font-weight: bold;
         }
